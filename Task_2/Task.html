@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car.in Landing Page</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Car.in</a></div>
+      <ul class="menu">
+        <li>
+          <span> New Cars</span>
+          <svg width="20" height="10" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+              stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="dropdown-content">
+            <a href="#">Find New Car</a>
+            <a href="#">Upcoming Car</a>
+            <a href="#">Car Brands</a>
+            <a href="#">popular Brands</a>
+          </div>
+        </li>
+        <li>
+          <span>Used Cars</span>
+          <svg width="20" height="10" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+              stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="dropdown-content">
+            <a href="#">Find Dealer</a>
+            <a href="#">Sell Your Car</a>
+            <a href="#">Car Brands</a>
+            <a href="#">popular Brands</a>
+          </div>
+        </li>
+        <li>
+          <span>Services</span>
+          <svg width="20" height="10" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+              stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="dropdown-content">
+            <a href="#">Modification</a>
+            <a href="#">Periodic Services</a>
+            <a href="#">Denting & Paintaing</a>
+            <a href="#">Car Inspection</a>
+          </div>
+        </li>
+        <li>
+          <span>Review</span>
+          <svg width="20" height="10" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+              stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="dropdown-content">
+            <a href="#">News</a>
+            <a href="#">User Review</a>
+            <a href="#">Expert Review</a>
+            <a href="#">Special Report</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <img class="image"
+      src="https://th.bing.com/th/id/R.e945fe35a0fcfd8b9aa5fcb46873ef27?rik=VEiYR8wb62kCuQ&riu=http%3a%2f%2fscr.templatemonster.com%2f43700%2f43753_01about_big.jpg%3fwidth%3d965%26height%3d598&ehk=xvkoWI2alENRQD1jt77TLx65lB7hByslslqeu8B%2fMt8%3d&risl=&pid=ImgRaw&r=0"
+      alt="Car Image">
+  </header>
+
+  <script>
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollTop > lastScrollTop) {
+        navbar.style.top = '-60px';
+      } else {
+        navbar.style.top = '0';
+      }
+
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    });
+  </script>
+</body>
+
+</html>
