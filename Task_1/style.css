@@ -1,4 +1,4 @@
-/* style.css */
+
 
 body {
     margin: 0;
@@ -11,7 +11,7 @@ body {
     width: 100%;
     background: #333;
     color: #fff;
-    transition: top 0.3s; /* Smooth transition for hiding/showing */
+    transition: top 0.3s;
   }
   
   .navbar .max-width {
@@ -54,6 +54,6 @@ body {
   }
   
   .header {
-    padding-top: 60px; /* Make space for the fixed navbar */
+    padding-top: 60px; 
   }
   

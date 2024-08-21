@@ -25,21 +25,21 @@
   <img class="image" src="https://th.bing.com/th/id/R.e945fe35a0fcfd8b9aa5fcb46873ef27?rik=VEiYR8wb62kCuQ&riu=http%3a%2f%2fscr.templatemonster.com%2f43700%2f43753_01about_big.jpg%3fwidth%3d965%26height%3d598&ehk=xvkoWI2alENRQD1jt77TLx65lB7hByslslqeu8B%2fMt8%3d&risl=&pid=ImgRaw&r=0" alt="Car Image">
 </body>
 <script>
-  let lastScrollTop = 0; // Keep track of the last scroll position
+  let lastScrollTop = 0; 
 
   window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScrollTop > lastScrollTop) {
-      // Scrolling down
-      navbar.style.top = '-60px'; // Adjust the value if necessary
+     
+      navbar.style.top = '-60px'; 
     } else {
-      // Scrolling up
+     
       navbar.style.top = '0';
     }
     
-    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; 
   });
 </script>
 

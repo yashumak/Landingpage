@@ -97,7 +97,7 @@
     object-fit: cover;
   }
 
-  /* Media Queries for Responsive Design */
+  
   @media (max-width: 768px) {
     .max-width {
       flex-direction: column;
